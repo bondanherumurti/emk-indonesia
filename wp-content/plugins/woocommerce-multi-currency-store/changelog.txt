@@ -1,0 +1,53 @@
+1.2.4 - Jan 20th, 2016
+=======================
+Fix: Fixed a bug that would show the wrong price for variable products
+Fix: Fixed a bug that would cause an error when try to get exchange rates from the APIs
+Tweak: Rewrote part of the plugin to make them more streamlined
+
+1.2.3 - Nov 18th, 2015
+=======================
+Fix: Fixed a bug that would not convert variable product prices in a multi site environment
+Fix: Fixed a bug when disabling GeoIP locating
+Fix: Fixed a bug when saving an empty price format for a currency
+Fix: Fixed a bug with converted prices not rounding correctly
+Tweak: Woocommerce 2.4 compatibility
+
+1.2.2 - Oct 19th, 2015
+=======================
+Fix: Fixed a bug when using multiple instances of the currrency switcher widget
+
+
+1.2.1 - Sept 19th, 2015
+=======================
+Tweak: Added as way to format the price output better so that currency codes can be added
+Fix: Fixed a bug that would not update the Cart widget when a new currency was selected
+			
+
+1.2 - Sept 19th, 2015
+=====================
+Feature: Added ability to disable automatic currency selectiong using GeoIP
+Tweak: Rewrote GeoIP location to use built in Woocommerce functionality
+Tweak: Rewrote currency conversion process
+Fix: Fixed a bug that would cause grouped and variable product prices to not convert correctly
+Fix: Other minor bugs
+
+
+1.1.2 - Jun 23rd, 2015
+======================
+Fix: Fixed a bug that would iccur for variable products on the frontend
+
+
+1.1.1 - Mar 4th, 2015
+=====================
+Fix: Fixed a bug that would cause the site to not load depending on hosting setup
+
+
+1.1 - Mar 2nd, 2015
+===================
+Fix: Woocommerce 2.3 compatibility
+Fix: Fixed a bug that would not show variable product prices correctly
+
+
+1.0 - Dec 23rd 2014
+=====================
+Initial Release

@@ -1,0 +1,28 @@
+.woocommerce_page_wc-settings h3.wc-settings-sub-title,
+.woocommerce_page_wc-settings h4,
+.woocommerce_page_woocommerce_settings h4 {
+	border-top: 1px solid #ccc;
+	padding-top: 15px;
+	font-size: 1.4em!important;
+}
+
+.woocommerce_page_wc-settings .table_like_checkbox_multiple th,
+.woocommerce_page_woocommerce_settings .table_like_checkbox_multiple th
+{
+	padding: 0;
+}
+
+.woocommerce_page_wc-settings .table_like_checkbox_multiple td,
+.woocommerce_page_woocommerce_settings .table_like_checkbox_multiple td
+{
+	padding: 0;
+}
+
+.woocommerce_page_wc-settings h3.wc-settings-sub-title.petit,
+.woocommerce_page_wc-settings h4.petit,
+.woocommerce_page_woocommerce_settings h4.petit
+{
+	border-top: none;
+	padding-top: 0px;
+	font-size: 1.1em!important;
+}

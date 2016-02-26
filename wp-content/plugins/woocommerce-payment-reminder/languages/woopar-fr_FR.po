@@ -1,0 +1,219 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Payment Reminder\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: MB Création\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.7.6\n"
+
+# wopar
+msgid "Payment reminder"
+msgstr "Relance paiement"
+
+msgid ""
+"This is an email sent to the customer who finished their order but didnt pay "
+"for it."
+msgstr ""
+"Envoi d'un email au client ayant terminé sa commande mais ne l'ayant pas "
+"encore payée."
+
+msgid "Your order is still pending"
+msgstr "Votre commande est toujours en attente"
+
+msgid ""
+"You put an order on {order_date}, you indicate youll pay it by "
+"{order_payment_method}, but we are still waiting for your payment !"
+msgstr ""
+"Vous avez passé une commande le {order_date}, vous avez indiqué le moyen de "
+"paiement suivant : {order_payment_method}, mais nous n'avons toujours pas "
+"reçu votre règlement !"
+
+msgid "Sending reminder email (manual)"
+msgstr "Envoi de l'email de relance (manuellement)"
+
+msgid "Y-m-d"
+msgstr "d/m/Y"
+
+msgid "at"
+msgstr "à"
+
+msgid "H:i:s"
+msgstr "H:i"
+
+msgid "Sending reminder email (automatic)"
+msgstr "Envoi de l'email de relance (automatiquement)"
+
+msgid "Order status"
+msgstr "Statut des commandes"
+
+msgid "Choose for which order statuses reminder applies."
+msgstr "Choisissez pour quels statuts de commande la relance s'applique."
+
+msgid "Automation"
+msgstr "Automatisation"
+
+msgid "Configure automatic emails."
+msgstr "Configuration des emails de relance automatiques"
+
+msgid "Important note:"
+msgstr "Information importante :"
+
+msgid ""
+"Automatic emails are independent from manual emails you might send. For "
+"example, if you set number of reminders to 3, the plugin will send 3 "
+"reminders automatically, no matter if you already sent some reminders "
+"manually."
+msgstr ""
+"Les emails automatiques sont indépendants des emails que vous envoyez "
+"manuellement. Par exemple, si vous choisissez d'envoyez 3 emails de relances "
+"automatiques, le plugin enverra automatiquement 3 emails de relance, peu "
+"importe si vous avez ou non envoyé des relances manuelles."
+
+msgid "Enable/Disable Automation"
+msgstr "Activer / Désactiver la relance automatique"
+
+msgid "Enable automatic email notification"
+msgstr "Activer les relances automatiques"
+
+msgid "Send first reminder after ... days"
+msgstr "Envoyer la première relance après … jours "
+
+msgid "Number of days before sending reminder first time"
+msgstr ""
+"Nombre de jours qui s'écoulent entre la commande et la permière relance "
+"automatique."
+
+msgid "Then, send it every ... days"
+msgstr "Ensuite, envoyer une relance tous les … jours"
+
+msgid "Number of days between each reminder"
+msgstr "Nombre de jours qui s'écoulent entre deux relances."
+
+msgid "Send maximum ... reminders"
+msgstr "Envoyer au maximum … relances"
+
+msgid ""
+"Total number of automatic reminders to send (if order still has one of the "
+"selected statuses)"
+msgstr ""
+"Nombre total de relances automatiques qui seront envoyées (si la commande a "
+"toujours l'un des status sélectionnés ci-dessus)."
+
+msgid "At the end, change order status ?"
+msgstr ""
+"Après avoir envoyé toutes les relances, changer le statut de la commande ?"
+
+msgid ""
+"Once all the reminders have been unsuccessfully sent, automatically change "
+"the status of the order (after waiting the same time as between two "
+"reminders)."
+msgstr ""
+"Si toutes les relances ont été envoyées sans succès, changer automatiquement "
+"le statut de la commande (après avoir attendu le même temps qu'entre deux "
+"relances)"
+
+msgid "Dont change status"
+msgstr "Ne pas changer le statut"
+
+msgid "Email settings"
+msgstr "Paramètres de l'email de relance"
+
+msgid "Configure email that will be send."
+msgstr "Configuration de l'email de relance"
+
+msgid "Email content"
+msgstr "Contenu de l'email"
+
+msgid ""
+"Content of the message sent to customer. You may put these variables : "
+"{order_date}, {order_number}, {order_payment_method}, {first_name}, "
+"{payment_url}. <a target=\"_blank\" href=\"http://codecanyon.net/item/"
+"woocommerce-payment-reminder/6965773/faqs/24782\">Note on payment url</a>"
+msgstr ""
+"Contenu de l'email envoyé au client. Vous pouvez utiliser les variables "
+"suivantes : {order_date}, {order_number}, {order_payment_method}, "
+"{first_name}, {last_name}, {payment_url}. <a target=\"_blank\" href=\"http://"
+"codecanyon.net/item/woocommerce-payment-reminder/6965773/faqs/24782\">Note "
+"concernant l'url de paiement.</a>"
+
+msgid "Email bcc"
+msgstr "Email en copie"
+
+msgid "Enter an email address to be in bcc of the reminder emails. (Optional)"
+msgstr ""
+"Entrez une adresse email à mettre en copie (bcc) de emails de relance. "
+"(Facultatif)"
+
+msgid "Configure"
+msgstr "Configurer"
+
+msgid "Send reminder"
+msgstr "Envoyer une relance"
+
+msgid "Reminder sent."
+msgstr "Relance envoyée"
+
+msgid "%s reminders sent."
+msgstr "%s relances envoyées"
+
+msgid "Reminder sent on"
+msgstr "Relance envoyée le<br />"
+
+msgid ""
+"After %s unsuccessful automatic reminders, order status was automatically "
+"changed."
+msgstr ""
+"Après %s relances sans succès, le statut de la commande a été changé "
+"automatiquement."
+
+#~ msgid ""
+#~ "This is an email sent to the customer who finished their order by didnt "
+#~ "payed it."
+#~ msgstr ""
+#~ "Envoi d'un email au client ayant terminé sa commande mais ne l'ayant pas "
+#~ "encore payée."
+
+#~ msgid "Automatisation"
+#~ msgstr "Automatisation"
+
+#~ msgid "Enable/Disable Automatisation"
+#~ msgstr "Activer / Désactiver la relance automatique"
+
+#~ msgid ""
+#~ "Content of the message sent to customer. You may put those variables : "
+#~ "{order_date}, {order_number}, {order_payment_method}, {first_name}, "
+#~ "{payment_url}. <a target=\"_blank\" href=\"http://codecanyon.net/item/"
+#~ "woocommerce-payment-reminder/6965773/faqs/24782\">Note on payment url</a>"
+#~ msgstr ""
+#~ "Contenu de l'email envoyé au client. Vous pouvez utiliser les variables "
+#~ "suivantes : {order_date}, {order_number}, {order_payment_method}, "
+#~ "{first_name}, {last_name}, {payment_url}. <a target=\"_blank\" href="
+#~ "\"http://codecanyon.net/item/woocommerce-payment-reminder/6965773/"
+#~ "faqs/24782\">Note concernant l'url de paiement.</a>"
+
+#~ msgid ""
+#~ "Content of the message sent to customer. You may put those variables : "
+#~ "{order_date}, {order_number}, {order_payment_method}, {first_name}, "
+#~ "{last_name}"
+#~ msgstr ""
+#~ "Contenu de l'email envoyé au client. Vous pouvez utiliser les variables "
+#~ "suivantes : {order_date}, {order_number}, {order_payment_method}, "
+#~ "{first_name}, {last_name}"
+
+#~ msgid ""
+#~ "Enter an email adress to be in bcc of the reminder emails. (Optional)"
+#~ msgstr ""
+#~ "Entrez une adresse email à mettre en copie (bcc) de emails de relance. "
+#~ "(Facultatif)"
+
+#~ msgid "Send first reminder afer ... days"
+#~ msgstr "Envoyer la permière relance au bout de … jours"
+
+#~ msgid "Sending reminder email"
+#~ msgstr "Envoi de l'email de relance"

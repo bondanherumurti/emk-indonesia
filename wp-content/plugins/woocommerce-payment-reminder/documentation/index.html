@@ -1,0 +1,264 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Reminder for WooCommerce Unpaid Orders</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">Plugin Documentation by &ldquo;Virginie Garcin, MB Création&rdquo; v2.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Reminder for WooCommerce Unpaid Orders&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 20/02/2014<br>Last update: 22/01/2015<br>
+					By: Virginie Garcin, MB Création<br>
+					Email: <a href="mailto:support@mbcreation.net">support@mbcreation.net</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">
+					Thank you for purchasing Reminder for WooCommerce Unpaid Orders. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/mbcreation">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#about">About</a></li>
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#settings">Setting up the email configuration</a></li>
+			<li><a href="#sending">Sending the email</a></li>
+			<li><a href="#automatisation">Automation</a></li>
+			<li><a href="#nd">Notes for developpers (hooks)</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="about"><strong>A) About</strong> - <a href="#toc">top</a></h3>
+		<p>
+		
+		Reminder for WooCommerce Unpaid Orders gives you the ability to send an email to customers who have an "on-hold" order, to remind them to pay for it. 
+		</p>
+		<p>
+		It's the case when a customer placed an order on your WooCommerce store with a payment method like cheque or bank transfer for which you're still expecting the payment. In that case, this plugin will add a button for you, to send him an email (that you may configure) ti incitate him to send you the payment. You also can configure automatic reminders.
+		</p>
+
+
+
+		<hr>
+
+		<h3 id="installation"><strong>B) Installation</strong> - <a href="#toc">top</a></h3>
+		<p>Reminder for WooCommerce Unpaid Orders requires WordPress 3.8+ and WooCommerce 2.0+ (WooCommerce 2.1, 2.2, 2.3 have been successfully tested)</p>
+		<p>Just like every plugins, just copy the woocommerce-payment-reminder folder in your wp-content/plugins folder then activate it through WordPress dashboard. The plugin is only accessible for Admin's</p>
+		<p>If the installation went OK, you can now see a new email configuration in the Emails Settings.</p>
+		<p>Go to WooCommerce > Settings > Emails Tab and then Payment reminder.</p>
+
+		<p>Then, configure your settings. <strong>Don't forget to check "Enable this email notification" !</strong></p>
+		
+		<figure>
+		  <img src="assets/images/install.png" width="700" />
+		  
+		</figure>
+		
+		
+		<hr>
+		<h3 id="settings"><strong>C) Settings up the email configuration</strong> - <a href="#toc">top</a></h3>
+		
+		<h4>a) Général setup</h4>
+		
+		<p>
+			The général configuration for the sent email is in WooCommerce > Settings > Emails > Payment reminder.
+		</p>
+		
+		<p>
+			You have several options :
+		</p>
+		<ul>
+			<li>Enabling or not this email (must be checked if you want the emails to be sent)</li>
+			<li>The subject of the email</li>
+			<li>The heading (main title) is the email</li>
+			<li>The email content of the reminder. You can user thoses variables : order_date}, {order_number}, {order_payment_method} which will be replaced before sending the email. Il you want more variables, you can add some <a href="#nb">using filters</a>.</li>
+			<li>The email type : html, text or both.</li>
+		</ul>
+		
+		
+		<figure>
+		  <img src="assets/images/settings.png" width="700" />
+		  
+		</figure>
+		
+		
+		<h4>b) Custom email template</h4>
+		
+		<p>
+			By default, the used template for the email will be the customer note template ; the email content you set up will appear at the usual place for a note in that template.
+		</p>
+		<p>
+			The customer note template used will be either the one in the woocommerce plugin directory, either the one you placed in your theme folder, under your-theme/woocommerce/emails/customer-note.php (or your-theme/woocommerce/emails/plain/customer-note.php if you choosed plain email type).
+		</p>
+		
+		<p>If you want to use a specific template, just add a the new template file 'payment-reminder.php' in your theme directory : your-theme/woocommerce/emails/ (or your-theme/woocommerce/emails/plain/ for plain text emails). To display the message in your template, use the $customer_note variable.</p>
+		
+		<hr>
+		<h3 id="settings"><strong>D) Sending the email</strong> - <a href="#toc">top</a></h3>
+		
+		<h4>a) With the button</h4>
+		
+		<figure>
+		  <img src="assets/images/order-panel.png" width="700"/>
+		  <figcaption>In order panel, you can now see a new action button "payment reminder" for the on-hold orders. Click on it to send the reminder email.</figcaption>
+		</figure>
+		
+		
+		<figure>
+		  <img src="assets/images/order-detail.png" />
+		  <figcaption>In the order detail, you have a new email resend action : "Payment reminder". Choose it and click de round button on the right to send the email.</figcaption>
+		</figure>
+		
+		<p>Once the email has been sent, you have the date of the reminder on the tooltip button and in the order note in order detail.</p>
+		
+		<figure>
+		  <img src="assets/images/order-tooltip.png" />
+		  <figcaption>Date on tooltip</figcaption>
+		</figure>
+		
+		<figure>
+		  <img src="assets/images/order-note.png" />
+		  <figcaption>Note added to the order</figcaption>
+		</figure>
+		
+		
+		<figure>
+		  <img src="assets/images/email.png" width="500"/>
+		  <figcaption>Exemple of the recieved email (default WooCommerce custom note mail template)</figcaption>
+		</figure>
+		
+		
+		<h4>b) With bulk actions</h4>
+		
+		<p>You have an action "send reminder" in the bulk actions list. Select the orders you want to send reminder to, then chose "send reminders" and click on "apply".</p>
+		
+		<p><strong>Important note: </strong> Reminders are sent to each selected order, no matter its status. It assumes that if you selected an order and trigger the "send reminder" action, it's because you know what you're doing, and that you obviously want to send the reminder email to that customer.</p>
+		
+		<figure>
+		  <img src="assets/images/bulk.png" />
+		</figure>
+		
+		<h3 id="automatisation"><strong>E) Automation</strong> - <a href="#toc">top</a></h3>
+		
+		<p>If automation is enabled, automatic emails will be sent to remind your customers.</p>
+		<p>Emails will be send to the orders having the statuses you selected.</p>
+		
+		<p>Please note that automatic emails are independent from manual emails you might send. For example, if you set number of reminders to 3, the plugin will send 3 reminders automatically, no matter if you already sent some reminders manually.</p>
+
+		<h3 id="nd"><strong>F) Notes for developpers</strong> - <a href="#toc">top</a></h3>
+		
+		<h4>a) Availables filters</h4>
+
+		<p>Here is the list of available filters : </p>
+		<ul>
+			<li><strong>wopar_keys_to_find_and_replace_filter</strong> : 1/ associative array, the list of keys witch will be searched and replaced in the content of the email. The key is the term searched and the associate value, the replacement. Default :
+			<pre>
+array(
+	'{order_date}' => date_i18n( woocommerce_date_format(), strtotime( $this->object->order_date ) ), 
+	'{order_number}' => $this->object->get_order_number(), 
+	'{order_payment_method}' => apply_filters('wopar_payment_method_title_filter',
+		 $this->object->payment_method_title),
+	'{first_name}' => $this->object->billing_first_name,
+	'{last_name}' => $this->object->billing_last_name
+);</pre>
+			2/ The email object, containg the order on property "object"
+			</li>
+		
+			<li><strong>wopar_admin_capabilities_filter</strong> : string, the capability required to use the plugin. Default : 'edit_shop_orders'.</li>
+		
+			<li><strong>wopar_button_status_filter</strong> : array, the statuses for which the action button is shown on the order panel. Default : array( 'on-hold' ).</li>
+			
+			<li><strong>wopar_payment_method_title_filter </strong>: string, the title of the payment method.</li>
+						
+			<li><strong>wopar_template_html_filter</strong> : string, the template to use for html email. Default : 'emails/payment-reminder.php'
+			
+			<li><strong>wopar_template_plain_filter</strong> : string, the template to use for plain text email. Default : 'emails/plain/payment-reminder.php'</li>
+			
+			<li><strong>wopar_date_tooltip_text_filter</strong> : string, the text of the tooltip on the button when reminder as already been sent. Default : <code>__('Reminder sent on', 'woopar').' '.date(__('Y-m-d', 'woopar'), strtotime($date)).' '.__('at', 'woopar').' '.date(__('H:i:s', 'woopar'), strtotime($date)) </code></li>
+			
+			<li><strong>wopar_admin_order_note_text_filter</strong> : string, the texte of the note added to the order in backend. Default : <code>__('Sending reminder email', 'woopar').' ('.date(__('Y-m-d', 'woopar'), strtotime($date)).' '.__('at', 'woopar').' '.date(__('H:i:s', 'woopar'), strtotime($date)).')'</code></li>
+			
+
+		</ul>
+
+		<h4>b) Usage</h4>
+
+
+<h5>wopar_button_status_filter. Exemple : display the action button for both on hold and pending orders</h5>
+
+<pre>
+// functions.php of your theme
+
+function my_button_status_filter($array)
+{
+	return array('on-hold', 'pending');
+}
+add_filter('wopar_button_status_filter', 'my_button_status_filter');
+
+</pre>
+
+<h5>wopar_keys_to_find_and_replace_filter. Exemple : add a variable {company} in the availables variables for email content</h5>
+
+<pre>
+// functions.php of your theme
+
+function my_keys_to_find_and_replace_filter($keys, $email)
+{
+	$keys['{company}'] = $email->object->billing_company;
+	return $keys;
+}
+add_filter('wopar_keys_to_find_and_replace_filter', 'my_keys_to_find_and_replace_filter', 10, 2);
+
+</pre>
+
+
+<h5>wopar_payment_method_title_filter. Exemple : change the "Cheque Payment" label by "cheque" in the email.</h5>
+
+<pre>
+// functions.php of your theme
+
+function my_payment_method_title_filter($label)
+{
+	if($label == 'Cheque Payment')
+		$label = 'cheque';
+	return $label;
+}
+add_filter('wopar_payment_method_title_filter', 'my_payment_method_title_filter');
+
+</pre>
+
+<p>Since 2.0 new filters are available. Check into the code, there is probably a filter to achieve what you want to do. If not, please send an email to the support, we will be pleased to add missing filters.</p>
+
+		<p class="append-bottom alt large"><strong>Virginie Garcin – MB Création</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

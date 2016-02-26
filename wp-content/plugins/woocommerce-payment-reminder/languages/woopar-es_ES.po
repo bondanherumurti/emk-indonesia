@@ -1,0 +1,208 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Payment Reminder\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Carlos Asensio <carlos@carlosasensio.com>\n"
+"Language-Team: MB Création\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.7.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# wopar
+msgid "Payment reminder"
+msgstr "﻿Recordatorio de Pago"
+
+msgid ""
+"This is an email sent to the customer who finished their order but didnt pay "
+"for it."
+msgstr ""
+"Este es un email enviado al cliente que finalizó el pedido pero no lo ha "
+"pagado aún."
+
+msgid "Your order is still pending"
+msgstr "﻿Su pedido está aún pendiente"
+
+msgid ""
+"You put an order on {order_date}, you indicate youll pay it by "
+"{order_payment_method}, but we are still waiting for your payment !"
+msgstr ""
+"Hiciste un pedido el {order_date}, y elegiste pagarlo con "
+"{order_payment_method}, pero aún no hemos recibido el pago."
+
+msgid "Sending reminder email (manual)"
+msgstr "Enviando recordatorio"
+
+msgid "Y-m-d"
+msgstr "d-m-Y"
+
+msgid "at"
+msgstr "en"
+
+msgid "H:i:s"
+msgstr "H:i:s"
+
+msgid "Sending reminder email (automatic)"
+msgstr "Enviando email recordatorio (automático)"
+
+msgid "Order status"
+msgstr "Estado del pedido"
+
+msgid "Choose for which order statuses reminder applies."
+msgstr "Escoge para que estado de orden se aplica el recordatorio de pago."
+
+msgid "Automation"
+msgstr "Automatización."
+
+msgid "Configure automatic emails."
+msgstr "Configurar emails automáticos."
+
+msgid "Important note:"
+msgstr "Nota importante:"
+
+msgid ""
+"Automatic emails are independent from manual emails you might send. For "
+"example, if you set number of reminders to 3, the plugin will send 3 "
+"reminders automatically, no matter if you already sent some reminders "
+"manually."
+msgstr ""
+"Los emails automáticos son independientes a los emails manuales que tu "
+"podrías enviar. Por ejemplo, si pones 3 recordatorios, el plugin enviará "
+"esos 3 recordatorios de manera automática, no importa si ya los enviaste tu "
+"de manera manual."
+
+msgid "Enable/Disable Automation"
+msgstr "Activar/Desactivar Automatización"
+
+msgid "Enable automatic email notification"
+msgstr "Activar notificación automática por email."
+
+msgid "Send first reminder after ... days"
+msgstr "Enviar primer recordatorio después de ... días."
+
+msgid "Number of days before sending reminder first time"
+msgstr "Número de días antes de enviar el primer recordatorio de pago"
+
+msgid "Then, send it every ... days"
+msgstr "Entonces, enviarlo cada ...  días"
+
+msgid "Number of days between each reminder"
+msgstr "Número de días entre cada recordatorio."
+
+msgid "Send maximum ... reminders"
+msgstr "Envíar como máximo ... recordatorios de pago."
+
+msgid ""
+"Total number of automatic reminders to send (if order still has one of the "
+"selected statuses)"
+msgstr ""
+"Número total de recordatorios de pagos a enviar ( si el pedido tiene aún uno "
+"de los estados seleccionados)"
+
+msgid "At the end, change order status ?"
+msgstr "Cuando acabe... ¿Cambia el estado del pedido?"
+
+msgid ""
+"Once all the reminders have been unsuccessfully sent, automatically change "
+"the status of the order (after waiting the same time as between two "
+"reminders)."
+msgstr ""
+"Una vez se hayan enviado todos los recordatorios sin éxito, cambiar el "
+"estado del pedido (después de esperar el mismo tiempo entre dos "
+"recordatorios)."
+
+msgid "Dont change status"
+msgstr "No cambiar estado"
+
+msgid "Email settings"
+msgstr "Ajustes de email"
+
+msgid "Configure email that will be send."
+msgstr "Configurar el email que será enviado."
+
+msgid "Email content"
+msgstr "Contenido del Email"
+
+msgid ""
+"Content of the message sent to customer. You may put these variables : "
+"{order_date}, {order_number}, {order_payment_method}, {first_name}, "
+"{payment_url}. <a target=\"_blank\" href=\"http://codecanyon.net/item/"
+"woocommerce-payment-reminder/6965773/faqs/24782\">Note on payment url</a>"
+msgstr ""
+"Contenido del mensaje enviado al cliente. Puedes utilizar estas variables: "
+"{order_date}, {order_number}, {order_payment_method}, {first_name}, "
+"{last_name}, {payment_url}. <a target=\"_blank\" href=\"http://codecanyon."
+"net/item/woocommerce-payment-reminder/6965773/faqs/24782\">Note on payment "
+"url</a>"
+
+msgid "Email bcc"
+msgstr ""
+
+msgid "Enter an email address to be in bcc of the reminder emails. (Optional)"
+msgstr ""
+
+msgid "Configure"
+msgstr "Configurar"
+
+msgid "Send reminder"
+msgstr "Enviar recordatorio"
+
+msgid "Reminder sent."
+msgstr "Recordatorio enviado."
+
+msgid "%s reminders sent."
+msgstr "%s recordatorios enviados."
+
+msgid "Reminder sent on"
+msgstr "Recordatorio enviado el"
+
+msgid ""
+"After %s unsuccessful automatic reminders, order status was automatically "
+"changed."
+msgstr ""
+"Tras %s recordatorios de pago enviados sin éxito, el estado del pedido se "
+"cambió automáticamente."
+
+#~ msgid ""
+#~ "This is an email sent to the customer who finished their order by didnt "
+#~ "payed it."
+#~ msgstr ""
+#~ "Este es un email enviado al cliente que finalizó el pedido pero no lo ha "
+#~ "pagado aún."
+
+#~ msgid "Automatisation"
+#~ msgstr "Automatización."
+
+#~ msgid "Enable/Disable Automatisation"
+#~ msgstr "Activar/Desactivar Automatización"
+
+#~ msgid ""
+#~ "Content of the message sent to customer. You may put those variables : "
+#~ "{order_date}, {order_number}, {order_payment_method}, {first_name}, "
+#~ "{payment_url}. <a target=\"_blank\" href=\"http://codecanyon.net/item/"
+#~ "woocommerce-payment-reminder/6965773/faqs/24782\">Note on payment url</a>"
+#~ msgstr ""
+#~ "Contenido del mensaje enviado al cliente. Puedes utilizar estas "
+#~ "variables: {order_date}, {order_number}, {order_payment_method}, "
+#~ "{first_name}, {last_name}, {payment_url}. <a target=\"_blank\" href="
+#~ "\"http://codecanyon.net/item/woocommerce-payment-reminder/6965773/"
+#~ "faqs/24782\">Note on payment url</a>"
+
+#~ msgid ""
+#~ "Content of the message sent to customer. You may put those variables : "
+#~ "{order_date}, {order_number}, {order_payment_method}, {first_name}, "
+#~ "{last_name}"
+#~ msgstr ""
+#~ "Contenido del mensaje enviado al cliente. Puedes utilizar estas "
+#~ "variables: {order_date}, {order_number}, {order_payment_method}, "
+#~ "{first_name}, {last_name}"
+
+#~ msgid "Send first reminder afer ... days"
+#~ msgstr "Enviar primer recordatorio después de ... días."
+
+#~ msgid "Sending reminder email"
+#~ msgstr "Envoi de l'email de relance"

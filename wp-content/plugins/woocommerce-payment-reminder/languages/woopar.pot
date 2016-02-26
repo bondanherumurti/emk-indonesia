@@ -1,0 +1,154 @@
+#woopar
+
+#:class-wc-email-payment-reminder.php
+msgid "Payment reminder"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "This is an email sent to the customer who finished their order but didnt pay for it."
+msgstr ""
+
+#:class-wc-email-payment-reminder.php class-wc-email-payment-reminder.php
+msgid "Your order is still pending"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "You put an order on {order_date}, you indicate youll pay it by {order_payment_method}, but we are still waiting for your payment !"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Sending reminder email (manual)"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php class-wc-email-payment-reminder.php class.admin.php
+msgid "Y-m-d"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php class-wc-email-payment-reminder.php class.admin.php
+msgid "at"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php class-wc-email-payment-reminder.php class.admin.php
+msgid "H:i:s"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Sending reminder email (automatic)"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Order status"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Choose for which order statuses reminder applies."
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Automation"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Configure automatic emails."
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Important note:"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Automatic emails are independent from manual emails you might send. For example, if you set number of reminders to 3, the plugin will send 3 reminders automatically, no matter if you already sent some reminders manually."
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Enable/Disable Automation"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Enable automatic email notification"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Send first reminder after ... days"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Number of days before sending reminder first time"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Then, send it every ... days"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Number of days between each reminder"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Send maximum ... reminders"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Total number of automatic reminders to send (if order still has one of the selected statuses)"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "At the end, change order status ?"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Once all the reminders have been unsuccessfully sent, automatically change the status of the order (after waiting the same time as between two reminders)."
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Dont change status"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Email settings"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Configure email that will be send."
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Email content"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Content of the message sent to customer. You may put these variables : {order_date}, {order_number}, {order_payment_method}, {first_name}, {payment_url}. <a target=\"_blank\" href=\"http://codecanyon.net/item/woocommerce-payment-reminder/6965773/faqs/24782\">Note on payment url</a>"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Email bcc"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Enter an email address to be in bcc of the reminder emails. (Optional)"
+msgstr ""
+
+#:class.admin.php class.admin.php
+msgid "Configure"
+msgstr ""
+
+#:class.admin.php class.admin.php class.admin.php
+msgid "Send reminder"
+msgstr ""
+
+#:class.admin.php
+msgid "Reminder sent."
+msgstr ""
+
+#:class.admin.php
+msgid "%s reminders sent."
+msgstr ""
+
+#:class.admin.php
+msgid "Reminder sent on"
+msgstr ""
+
+#:class.automatic.php
+msgid "After %s unsuccessful automatic reminders, order status was automatically changed."
+msgstr ""
+

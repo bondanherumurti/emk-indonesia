@@ -1,0 +1,48 @@
+<table class="widefat">
+	<thead>	
+		<tr>
+			<th>Currency</th>
+			<th>Price</th>
+			<th>Custom Price</th>
+			<th>Sale Price</th>
+			<th>Custom Sale Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<?php foreach( $store_currencies as $currency => $data ){ ?>
+			<tr>
+				<td>
+					<?php echo $currency; ?>
+				</td>
+				<td>
+					<?php
+					if( $regular_price ){
+						$price = wmcs_convert_price( $regular_price, $currency );
+						echo wc_price( $price, array( 'currency' => $currency ) );
+					} else {
+						$price = 0;
+						echo '-';
+					}
+					?>
+				</td>
+				<td>
+					<input type="text" class="" name="currency_prices[<?php echo $currency; ?>][regular]" placeholder="<?php echo $price; ?>" value="<?php echo ( isset( $products_currency_prices[$currency]['regular'] ) AND $products_currency_prices[$currency] ) ? $products_currency_prices[$currency]['regular'] : ''; ?>" style="width: 25%;"/> 
+				</td>
+				<td>
+					<?php
+					if( $sale_price ){
+						$price = wmcs_convert_price( $sale_price, $currency );
+						echo wc_price( $price, array( 'currency' => $currency ) );
+					} else {
+						$price = 0;
+						echo '-';
+					}
+					?>
+				</td>
+				<td>
+					<input type="text" class="" name="currency_prices[<?php echo $currency; ?>][sale]" placeholder="<?php echo $price; ?>" value="<?php echo ( isset( $products_currency_prices[$currency]['sale'] ) AND $products_currency_prices[$currency] ) ? $products_currency_prices[$currency]['sale'] : ''; ?>" style="width: 25%;"/> 
+				</td>
+			</tr>
+		<?php } ?>
+	</tbody>
+</table>

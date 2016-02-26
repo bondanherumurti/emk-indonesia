@@ -1,0 +1,182 @@
+#ga_main {
+    float:left;
+    display: block;
+}
+#ga_main th {
+    /*min-width:100px;*/
+}
+#ga_main td {
+    max-width: 400px;
+}
+
+#ga_main li {
+	list-style-type: none;
+}
+.ga_events_sidebar {
+    float:right;
+    width: 250px;
+    margin-top:52px;
+    margin-right: 30px;
+}
+.ga_intable {
+    margin-left:10px;
+}
+
+#ga_main form th {
+    width: 0px !important;
+    padding: 0px !important;
+}
+
+#ga_main form label {
+    font-size: 1.2em;
+    margin-bottom: 3px;
+}
+
+#ga_main .inner_table {
+    margin-top: 10px;
+}
+#ga_main label {
+    min-width: 170px;
+    display: inline-block;
+}
+
+.btn-subscribe {
+
+    z-index: 10000;
+    padding: 8px 12px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    color: #FFF;
+    background-color: #7ACBA6;
+    box-shadow: 0 3px 2px #06121E;
+    border-radius: 7px;
+    position: relative;
+}
+
+.wpcta {
+    text-align: center;
+}
+
+.ga_events_sidebar li {
+    list-style-type: none !important;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.ga_events_sidebar li i {
+    margin-right: 5px;
+}
+
+.ga_events_sidebar th {
+    text-align: center;
+    font-size: 19px;
+    background-color: #22636A;
+    color: white !important;
+}
+.ga_events_sidebar .tfoot {
+    background-color: #22636A;
+}
+
+.ga_events_sidebar .features {
+    background-color: #7ACBA6;
+}
+
+.ga_events_sidebar form {
+    background-color: #96D0B5;
+    padding: 0px !important;
+}
+
+.ga_events_sidebar form .form-content {
+    padding: 10px 0 10px 3%;
+}
+
+.ga_events_sidebar form .clear {
+    display: block !important;
+    width: 100% !important;
+    background-color: #22636A;
+    padding: 10px 0 10px;
+}
+
+.ga_events_sidebar form .btn-subscribe {
+    display: block;
+    margin: auto;
+}
+
+
+#mc_embed_signup input.email {
+    width: 96% !important;
+}
+
+a[href="admin.php?page=wp-google-analytics-events-upgrade"] {
+		color: #F7691D !important;
+}
+
+a[href="admin.php?page=wp-google-analytics-events-upgrade"]:hover {
+	color: #cf471c !important;
+ }
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.57);
+    top: 0;
+    z-index: 99;
+}
+.popup h1{
+    text-align: center;
+    color: red;
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    padding: 20px;
+    margin-top: 15%;
+    background: #FFFFFF;
+    position: relative;
+}
+a.btn_close_popup img {
+    width: 23px;
+    position: absolute;
+    right: 8px;
+    top: 6px;
+}
+
+.settings_content{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.57);
+    top: 0;
+    display: none;
+}
+.settings_content form{
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    padding: 20px;
+    margin-top: 22%;
+    background: #FFFFFF;
+    position: relative;
+}
+.settings_content img{
+    width: 18px;
+    position: absolute;
+    right: 10px;
+    top: 11px;
+}

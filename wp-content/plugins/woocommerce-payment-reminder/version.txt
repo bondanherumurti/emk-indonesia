@@ -1,0 +1,49 @@
+Reminder for WooCommerce Unpaid Orders
+--------------------------------------
+
+version 2.6
+– Important bugfix for bulk emails sending
+
+version 2.5
+– Autoupdater
+
+version 2.4
+– Corrects some warnings
+– Improve english translation
+
+version 2.3
+– Add an optional link to the checkout into the email
+
+version 2.2
+– Add some email copy of the reminder
+
+version 2.1
+- Add a filter on cron timing
+
+version 2.0.1
+- Remove debug trace
+
+version 2.0
+– Automation
+– Bulk send email
+– Moving statuses choice into back-end
+– Update notification in back-end
+– Spanish translation (thanks to Carlos Asensio)
+– Compatible check with WP 4.1, WC 2.0,  WC 2.1, WC 2.2, WC 2.3
+
+version 1.1.1 :
+- Adding a hook during reminder sending process
+- Prefix the post_meta with an _
+
+version 1.1 :
+- Add an order note when sending the reminder
+- Display de date of the sent reminder in the tooltip
+
+version 1.0.1 :
+- Remove a deprecated function
+
+version 1.0 :
+- New email "Payment reminder". To configure : WooCommerce > Settings > Emails
+- New action button in orders panel to send the email
+- New "email resend action" in the order detail to send the email 
+- Compatible with Wordpress 3.8.1 and WooCommerce 2.0 or 2.1 

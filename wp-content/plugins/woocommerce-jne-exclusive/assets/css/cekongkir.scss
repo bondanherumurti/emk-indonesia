@@ -1,0 +1,113 @@
+#woocommerce_jne_cekongkir_tab_container.row{margin-left:-0.75rem;margin-right:-0.75rem;}
+#woocommerce_jne_cekongkir_tab_container.row:after{content:"";display:block;clear:both;}
+#woocommerce_jne_cekongkir_tab_container.row .co-lom{float:left;-webkit-box-sizing: border-box;-mox-box-sizing: border-box; box-sizing:border-box;padding:0 0.75rem;}
+#woocommerce_jne_cekongkir_tab_container.row .co-lom select{width:100%;}
+
+.woocommerce_jne_cekongkir_tab.woocommerce_jne_cekongkir_tab_loader,
+.woocommerce_jne_cekongkir_widget.woocommerce_jne_cekongkir_widget_loader,
+.woocommerce_jne_cekongkir_shortcode.woocommerce_jne_cekongkir_shortcode_loader{
+	position:relative;
+}
+
+.woocommerce_jne_cekongkir_tab.woocommerce_jne_cekongkir_tab_loader #woocommerce_jne_cekongkir_tab_loader,
+.woocommerce_jne_cekongkir_widget.woocommerce_jne_cekongkir_widget_loader #woocommerce_jne_cekongkir_widget_loader,
+.woocommerce_jne_cekongkir_shortcode.woocommerce_jne_cekongkir_shortcode_loader #woocommerce_jne_cekongkir_shortcode_loader{
+	height:1em;
+	width:1em;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-.5em;
+	margin-top:-.5em;
+	display:block;
+	-webkit-animation:spin 1s ease-in-out infinite;
+	-moz-animation:spin 1s ease-in-out infinite;
+	animation:spin 1s ease-in-out infinite;
+	content:"";
+	background:center center/cover;
+	line-height:1;
+	text-align:center;
+	font-size:2em;
+	color:rgba(0,0,0,.75)
+}
+
+.woocommerce_jne_cekongkir_tab.woocommerce_jne_cekongkir_tab_loader:before,
+.woocommerce_jne_cekongkir_widget.woocommerce_jne_cekongkir_widget_loader:before,
+.woocommerce_jne_cekongkir_shortcode.woocommerce_jne_cekongkir_shortcode_loader:before{
+	content:"";
+	display:block;
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:rgba(255, 255, 255, 0.5);
+	z-index: 9;
+}
+
+.woocommerce_jne_cekongkir_tab .select2-container .select2-choice,
+.woocommerce_jne_cekongkir_widget .select2-container .select2-choice,
+.woocommerce_jne_cekongkir_shortcode .select2-container .select2-choice{
+	padding:5px;
+}
+
+#woocommerce_jne_cekongkir_widget_container p,
+#woocommerce_jne_cekongkir_shortcode_container p{
+	margin-bottom:10px;
+}
+
+#woocommerce_jne_cekongkir_widget_container select,
+#woocommerce_jne_cekongkir_shortcode_container select{
+    width: 100%;
+}
+
+#woocommerce_jne_cekongkir_widget_berat,
+#woocommerce_jne_cekongkir_shortcode_berat{
+	display:block;
+	width:97%;
+	padding:5px;
+	border-radius:3px;
+	background-color:#fff;
+	border:1px solid #ccc;
+}
+
+#woocommerce_jne_cekongkir_widget_result .layanan,
+#woocommerce_jne_cekongkir_shortcode_result .layanan{
+	margin-bottom:10px;
+	padding-bottom:10px;
+	border-bottom:1px solid #ccc;
+	background:url( '../images/jne_logo_smalls.png' ) no-repeat right center;
+}
+
+#woocommerce_jne_cekongkir_widget_result .nama_paket,
+#woocommerce_jne_cekongkir_shortcode_result .nama_paket{
+	font-weight:700;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+/* Desktop */
+@media only screen and (min-width : 993px) {
+	.row .co-lom.co-3{
+		width:33.33333%;
+		margin-left:0;	
+	}
+}
+
+/* Tablet and Mobile */
+@media only screen and (max-width : 992px) {
+	.row .co-lom.co-3{
+		width:100%;
+		margin-left:0;
+		margin-bottom:10px;
+	}	
+}

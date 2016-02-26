@@ -1,0 +1,136 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "YITH WooCommerce Bulk Product Editing"
+msgstr ""
+
+#. Short description.
+msgid "YITH WooCommerce Bulk Product Editing allows you to edit the prices of different products at the same time."
+msgstr ""
+
+#. Screenshot description.
+msgid "Admin view: Bulk Product Editing"
+msgstr ""
+
+#. Screenshot description.
+msgid "Admin view: Filter products by category"
+msgstr ""
+
+#. Screenshot description.
+msgid "Admin view: Filter applied"
+msgstr ""
+
+#. Screenshot description.
+msgid "Admin view: Filter products by Regular Price or Sale Price"
+msgstr ""
+
+#. Screenshot description.
+msgid "Admin view: Easy editing of the products in the table"
+msgstr ""
+
+#. Screenshot description.
+msgid "Admin view: Bulk editing for multiple products editing"
+msgstr ""
+
+#. Screenshot description.
+msgid "Admin view: Bulk editing for Regular Price"
+msgstr ""
+
+#. Screenshot description.
+msgid "Admin view: Bulk editing applied"
+msgstr ""
+
+#. Found in description header.
+msgid "Features:"
+msgstr ""
+
+#. Found in description list item.
+msgid "Possibility to filter your products by category, regular price, and sale price before editing"
+msgstr ""
+
+#. Found in description list item.
+msgid "A specific table to edit prices of the products before saving values"
+msgstr ""
+
+#. Found in description list item.
+msgid "Possibility to edit prices of multiple products, setting them equal to a specific value, or increasing/decreasing them by a value or a percentage"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Editing a large amount of items can be extremely annoying: you have to select them one by one, choosing the value you want. With YITH WooCommerce Bulk Product Editing, you will be free to apply price modifications to a great quantity of items, applying bulk actions to increase or decrease the value, or setting a new price for every selected item. A simple and direct way to fulfill a long and stressful operation with few clicks!"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Unzip the downloaded zip file."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Upload the plugin folder into the <code>wp-content/plugins/</code> directory of your WordPress site."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Activate <code>YITH WooCommerce Bulk Product Editing</code> from Plugins page"
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "YITH WooCommerce Bulk Product Editing will add a new submenu called \"Bulk Product Editing\" under \"YIT Plugins\" menu. Here you are able to edit your products."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed: bug on saving products"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added: Italian language"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed: minor bug"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added: Support to WooCommerce 2.4.4"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added: Support to WordPress 4.2.4"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added: Support to WooCommerce 2.4.2"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Initial release"
+msgstr ""
+
+#. Found in remaining content header.
+msgid "Suggestions"
+msgstr ""
+
+#. Found in remaining content header.
+msgid "Translators"
+msgstr ""
+
+#. Found in remaining content header.
+msgid "Available Languages"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "English (Default)"
+msgstr ""
+
+#. Found in remaining content list item.
+msgid "Italian"
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "If you have suggestions about how to improve YITH WooCommerce Bulk Product Editing, you can <a href=\"mailto:plugins@yithemes.com\" title=\"Your Inspiration Themes\">write us</a> so we can enhance our YITH WooCommerce Bulk Product Editing plugin."
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid ""
+"If you have created your own language pack, or have an update for an existing one, you can send <a href=\"http://codex.wordpress.org/Translating_WordPress\" title=\"Translating WordPress\">gettext PO and MO file</a>\n"
+"<a href=\"http://yithemes.com/contact\" title=\"Your Inspiration Themes\">use</a> so we can bundle it into YITH WooCommerce Bulk Product Editing"
+msgstr ""
